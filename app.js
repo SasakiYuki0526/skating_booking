@@ -25,7 +25,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // 🔑 管理員密碼設定
-const ADMIN_PASSWORD = "1234";
+const ADMIN_PASSWORD = "101010";
 let isAdmin = false;
 
 let allScheduleData = {};
