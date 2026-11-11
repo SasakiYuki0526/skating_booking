@@ -211,6 +211,25 @@ body {
     display: inline-block;
 }
 
+/* 紅點 (全包場) */
+.dot-full-booked {
+    width: 7px;
+    height: 7px;
+    background-color: #e53e3e;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 4px rgba(229, 62, 62, 0.6);
+}
+
+.full-booking-notice {
+    grid-column: 1 / -1;
+    background-color: #fff5f5;
+    border: 1px solid #feb2b2;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
 /* --------------------------------------------------
    右側時段區域與膠囊卡片 (圖示完整鎖定在框內)
 -------------------------------------------------- */
@@ -333,4 +352,26 @@ body {
         padding-left: 0;
         padding-top: 10px;
     }
+}
+
+/* --------------------------------------------------
+   月曆下方圖例說明 (Legend)
+-------------------------------------------------- */
+.calendar-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed #e2e8f0;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: #4a5568;
+    font-weight: 500;
 }
